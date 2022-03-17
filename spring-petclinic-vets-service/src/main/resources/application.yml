@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: production
+  cache:
+    cache-names: vets
+  cloud:
+    config:
+      uri: http://config-server
+  application:
+    name: vets-service
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery-server:8761/eureka
